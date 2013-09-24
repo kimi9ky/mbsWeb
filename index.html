@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:wb=“http://open.weibo.com/wb”>
 <head>
 <meta charset="utf-8">
-<title>Serenity - Modern bootstrap website template</title>
+<title>魔石科技官方主页</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -20,6 +20,7 @@
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 <script src="assets/js/jquery-1.8.2.min.js"></script>
 <script src="assets/js/jquery.easing.1.3.js"></script>
 <script src="assets/js/google-code-prettify/prettify.js"></script>
@@ -47,12 +48,33 @@
 <header>
 <!-- Navbar
     ================================================== -->
+<div class="headtoolbar">
+
+  <div style="float: right;margin-right: 80px">
+      <div class="wechatQRcodeBottom" style="display: inline;">
+      <a  href="index.html">
+      <img src="assets/img/icons/weixin_icon.png" style="height: 22px" alt="" />
+      </a>
+      <span style="margin: 0px 90px 0px 0px">&nbsp;微信公众帐号：微客多</span>
+      </div>
+      <div style="display: inline;position: absolute;margin-left: -67px">
+          <wb:follow-button uid="3211504190"  width="67" height="24" style="display:inline-block;margin-bottom:-9px"></wb:follow-button>
+      </div>
+      <div style="display: inline">
+          <span style="margin-right: 30px">微客多</span>
+      </div>
+
+      <button class=" btn-longSize btn-login" style="margin-right: 10px">客户登陆</button>
+      <button class=" btn-longSize btn-apply">申请使用</button>
+  </div>
+  
+</div>
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
 			<!-- logo -->
-			<a class="brand logo" href="index.html">
-			<img src="assets/img/logo.png" alt="" />
+            <a class="brand logo" href="index.html">
+			<img src="assets/img/mbslogo.png" alt="" />
 			</a>
 			<!-- end logo -->
 			<!-- top menu -->
@@ -60,55 +82,25 @@
 				<nav>
 				<ul class="nav topnav">
 					<li class="dropdown active">
-					<a href="index.html">Home</a>
+					<a href="index.html">主页</a>
 					</li>
 					<li class="dropdown">
-					<a href="index.html#">Features</a>
+					<a href="index.html#">解决方案</a>
 					<ul class="dropdown-menu">
-						<li><a href="overview.html">Overview</a></li>
-						<li><a href="scaffolding.html">Scaffolding</a></li>
-						<li><a href="base-css.html">Base CSS</a></li>
-						<li><a href="components.html">Components</a></li>
-						<li><a href="javascript.html">Javascripts</a></li>
-						<li><a href="icons.html">More icons</a></li>
-						<li class="dropdown"><a href="index.html#">3rd level</a>
-						<ul class="dropdown-menu sub-menu">
-							<li><a href="index.html#">Example menu</a></li>
-							<li><a href="index.html#">Example menu</a></li>
-							<li><a href="index.html#">Example menu</a></li>
-						</ul>
-						</li>
+						<li><a href="overview.html">国际市场营销</a></li>
+						<li><a href="scaffolding.html">媒体和展会活动</a></li>
+						<li><a href="base-css.html">汽车后市场</a></li>
+						<li><a href="components.html">通信行业</a></li>
 					</ul>
 					</li>
 					<li class="dropdown">
-					<a href="index.html#">Pages</a>
-					<ul class="dropdown-menu">
-						<li><a href="about.html">About us</a></li>
-						<li><a href="pricingtable.html">Pricing table</a></li>
-						<li><a href="fullwidth.html">Fullwidth</a></li>
-						<li><a href="404.html">404</a></li>
-					</ul>
+					<a href="index.html#">支持</a>
 					</li>
 					<li class="dropdown">
-					<a href="index.html#">Portfolio</a>
-					<ul class="dropdown-menu">
-						<li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
-						<li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
-						<li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
-						<li><a href="portfolio-detail.html">Portfolio detail</a></li>
-					</ul>
+					<a href="index.html#">合作伙伴</a>
 					</li>
 					<li class="dropdown">
-					<a href="index.html#">Blog</a>
-					<ul class="dropdown-menu">
-						<li><a href="blog_left_sidebar.html">Blog left sidebar</a></li>
-						<li><a href="blog_right_sidebar.html">Blog right sidebar</a></li>
-						<li><a href="post_left_sidebar.html">Post left sidebar</a></li>
-						<li><a href="post_right_sidebar.html">Post right sidebar</a></li>
-					</ul>
-					</li>
-					<li>
-					<a href="contact.html">Contact</a>
+					<a href="index.html#">关于我们</a>
 					</li>
 				</ul>
 				</nav>
@@ -188,44 +180,48 @@
 <div class="container">
 	<div class="row">
 		<div class="span3 features">
-			<i class="icon-circled icon-32 icon-suitcase left active"></i>
-			<h4>Responsive bootstrap</h4>
+            <img src="assets/img/icons/internation_icon.png"/>
+			<!--<i class="icon-circled icon-32 icon-suitcase left active"></i>-->
+			<h4>国际市场营销</h4>
 			<div class="dotted_line">
 			</div>
 			<p class="left">
-				 Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+                 在海外市场，出口厂商、国际贸易商家比任何人都要了解，社会媒体是如何影响客户行为的——如今到处都是与您的品牌建立关联的机会。而这意味着从厂家到卖家再到经销商，所..
 			</p>
-			<a href="index.html#">Learn more</a>
+			<a href="index.html#">了解更多</a>
 		</div>
 		<div class="span3 features">
-			<i class="icon-circled icon-32 icon-plane left"></i>
-			<h4>Lot of features</h4>
+            <img src="assets/img/icons/communite_icon.png"/>
+			<!--<i class="icon-circled icon-32 icon-plane left"></i>-->
+			<h4>媒体和展会活动</h4>
 			<div class="dotted_line">
 			</div>
 			<p class="left">
-				 Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+				我们正通过社交媒体、移动设备等新途径接触信息和娱乐，接下来会怎样？媒体公司展会组织必须密切关注各种迹象，并以从前未有的方式与客户沟通，利用员工社交网络将销售..
 			</p>
-			<a href="index.html#">Learn more</a>
+			<a href="index.html#">了解更多</a>
 		</div>
 		<div class="span3 features">
-			<i class="icon-circled icon-32 icon-leaf left"></i>
-			<h4>Multipurpose template</h4>
+            <img src="assets/img/icons/trans_icon.png"/>
+			<!--<i class="icon-circled icon-32 icon-leaf left"></i>-->
+			<h4>汽车后市场</h4>
 			<div class="dotted_line">
 			</div>
 			<p class="left">
-				 Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+               社交媒体和移动设备的日益流行将会打破企业与客户之间的壁垒。要在未来成为成功的制造商，必须在现在就成为社交企业——与消费者、渠道合作伙伴和供应商建立更紧密的关系..
 			</p>
-			<a href="index.html#">Learn more</a>
+			<a href="index.html#">了解更多</a>
 		</div>
 		<div class="span3 features">
-			<i class="icon-circled icon-32 icon-wrench left"></i>
-			<h4>With latest technology</h4>
+            <img src="assets/img/icons/meeting_icon.png"/>
+			<!--<i class="icon-circled icon-32 icon-wrench left"></i>-->
+			<h4>通信行业</h4>
 			<div class="dotted_line">
 			</div>
 			<p class="left">
-				 Dolorem adipiscing definiebas ut nec. Dolore consectetuer eu vim, elit molestie ei has, petentium imperdiet in pri mel virtute nam.
+                在竞争激烈而且变化莫测的电信市场中，服务提供商特别合适转变为社交企业。明智的公司会加强响应性和灵活性，与客户和员工建立联系以推动创新、赢得新的业务并提高客户忠..
 			</p>
-			<a href="index.html#">Learn more</a>
+			<a href="index.html#">了解更多</a>
 		</div>
 	</div>
 	<div class="row">
@@ -234,16 +230,14 @@
 				<div class="row">
 					<div class="span12">
 						<div class="tagline_text">
-							<h2>Don't miss this special offer for limited time only!</h2>
-							<p>
-								Lorem ipsum dolor sit amet, vix ceteros noluisse intellegat ne, ex nec insolens liberavisse, no adhuc causae nominati duo.
-							</p>
+                            <img src="assets/img/wkdLogo.png"/>
+							<h2>领先的社会化媒体管理解决方案 ！</h2>
 						</div>
-						<div class="btn-toolbar cta">
-							<a class="btn btn-large btn-color" href="index.html#">
-							<i class="icon-plane icon-white"></i> Try free version </a>
-							<a class="btn btn-large btn-inverse" href="index.html#">
-							<i class="icon-shopping-cart icon-white"></i> Buy license </a>
+						<div class="btn-toolbar cta" >
+							<button class="btn-large btn-login" href="index.html#" style="color: #fff;width: 150px;">
+                                <img src="assets/img/icons/apply_use.png"/> 申请使用 </button>
+							<button class="btn-large btn-apply" href="index.html#" style="color: #fff;width: 150px;margin-left: 15px">
+                                <img src="assets/img/icons/purchase.png"/> 购买 </button>
 						</div>
 					</div>
 				</div>
@@ -254,7 +248,7 @@
 	<div class="row">
 		<div class="home-posts">
 			<div class="span12">
-				<h3>Recent blog posts</h3>
+				<h3>近期发布信息</h3>
 			</div>
 			<div class="span3">
 				<div class="post-image">
@@ -262,18 +256,12 @@
 					<img src="assets/img/dummies/blog1.jpg" alt="" />
 					</a>
 				</div>
-				<div class="entry-meta">
-					<a href="index.html#"><i class="icon-square icon-48 icon-pencil left"></i></a>
-					<span class="date">Sep 17 <br />
-					2013</span>
-				</div>
-				<!-- end .entry-meta -->
 				<div class="entry-body">
 					<a href="http://wbpreview.com/previews/WB07LH680/single-post.html">
-					<h5 class="title">This is a standard post</h5>
+					<h5 class="title">领先的社会化媒体管理解决方案</h5>
 					</a>
 					<p>
-						Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.
+                        社交媒体和移动设备的日益流行将会打破企业与客户之间的壁垒。要在未来成为成功的制造商，必须在现在就成为社交企业——与消费者..
 					</p>
 				</div>
 				<!-- end .entry-body -->
@@ -286,78 +274,54 @@
 					<img src="assets/img/dummies/blog2.jpg" alt="" />
 					</a>
 				</div>
-				<div class="entry-meta">
-					<a href="index.html#"><i class="icon-square icon-48 icon-pencil left"></i></a>
-					<span class="date">Sep 17 2013</span>
-				</div>
-				<!-- end .entry-meta -->
 				<div class="entry-body">
 					<a href="http://wbpreview.com/previews/WB07LH680/single-post.html">
-					<h5 class="title">Example post image format</h5>
+					<h5 class="title">领先的社会化媒体管理解决方案</h5>
 					</a>
 					<p>
-						Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.
+                        社交媒体和移动设备的日益流行将会打破企业与客户之间的壁垒。要在未来成为成功的制造商，必须在现在就成为社交企业——与消费者..
 					</p>
 				</div>
 				<!-- end .entry-body -->
 				<div class="clear">
 				</div>
 			</div>
-			<div class="span3">
-				<div class="video-container">
-					<iframe src="http://player.vimeo.com/video/30585464?title=0&byline=0">
-					</iframe>
-				</div>
-				<div class="entry-meta">
-					<a href="index.html#"><i class="icon-square icon-48 icon-facetime-video left"></i></a>
-					<span class="date">Sep 17 2011</span>
-				</div>
-				<!-- end .entry-meta -->
-				<div class="entry-body">
-					<a href="http://wbpreview.com/previews/WB07LH680/single-post.html">
-					<h5 class="title">Amazing video post format</h5>
-					</a>
-					<p>
-						Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
-					</p>
-				</div>
-				<!-- end .entry-body -->
-				<div class="clear">
-				</div>
-			</div>
-			<div class="span3">
-				<div class="post-slider">
-					<!-- start flexslider -->
-					<div class="flexslider">
-						<ul class="slides">
-							<li>
-							<a href="http://wbpreview.com/previews/WB07LH680/singlepost.html"><img src="assets/img/dummies/work1.jpg" alt="" /></a>
-							</li>
-							<li>
-							<a href="http://wbpreview.com/previews/WB07LH680/singlepost.html"><img src="assets/img/dummies/work2.jpg" alt="" /></a>
-							</li>
-							<li>
-							<a href="http://wbpreview.com/previews/WB07LH680/singlepost.html"><img src="assets/img/dummies/work3.jpg" alt="" /></a>
-							</li>
-						</ul>
-					</div>
-					<!-- end flexslider -->
-				</div>
-				<div class="entry-meta">
-					<a href="index.html#"><i class="icon-square icon-48 icon-picture left"></i></a>
-					<span class="date">Sep 17 2011</span>
-				</div>
-				<!-- end .entry-meta -->
-				<div class="entry-body">
-					<a href="http://wbpreview.com/previews/WB07LH680/single-post.html">
-					<h5 class="title">Slider post format with flexslider</h5>
-					</a>
-					<p>
-						Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque.
-					</p>
-				</div>
-				<!-- end .entry-body -->
-			</div>
+            <div class="span3">
+                <div class="post-image">
+                    <a href="index.html#">
+                        <img src="assets/img/dummies/blog2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="entry-body">
+                    <a href="http://wbpreview.com/previews/WB07LH680/single-post.html">
+                        <h5 class="title">领先的社会化媒体管理解决方案</h5>
+                    </a>
+                    <p>
+                        社交媒体和移动设备的日益流行将会打破企业与客户之间的壁垒。要在未来成为成功的制造商，必须在现在就成为社交企业——与消费者..
+                    </p>
+                </div>
+                <!-- end .entry-body -->
+                <div class="clear">
+                </div>
+            </div>
+            <div class="span3">
+                <div class="post-image">
+                    <a href="http://wbpreview.com/previews/WB07LH680/single-post.html">
+                        <img src="assets/img/dummies/blog1.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="entry-body">
+                    <a href="http://wbpreview.com/previews/WB07LH680/single-post.html">
+                        <h5 class="title">领先的社会化媒体管理解决方案</h5>
+                    </a>
+                    <p>
+                        社交媒体和移动设备的日益流行将会打破企业与客户之间的壁垒。要在未来成为成功的制造商，必须在现在就成为社交企业——与消费者..
+                    </p>
+                </div>
+                <!-- end .entry-body -->
+                <div class="clear">
+                </div>
+            </div>
 		</div>
 	</div>
 </div>
@@ -369,63 +333,45 @@
 	<div class="row">
 		<div class="span3">
 			<div class="widget">
-				<h5>Browse pages</h5>
+				<h5>魔石科技</h5>
 				<ul class="regular">
-					<li><a href="index.html#">Work for us</a></li>
-					<li><a href="index.html#">Creative process</a></li>
-					<li><a href="index.html#">Case study</a></li>
-					<li><a href="index.html#">Scaffold awwards</a></li>
-					<li><a href="index.html#">Meet the team</a></li>
+					<li><a href="index.html#">加入我们</a></li>
+					<li><a href="index.html#">重大事项</a></li>
+					<li><a href="index.html#">成功案例</a></li>
+					<li><a href="index.html#">团队简介</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="span3">
 			<div class="widget">
-				<h5>Recent blog posts</h5>
+				<h5>近期信息发布</h5>
 				<ul class="regular">
-					<li><a href="index.html#">Lorem ipsum dolor sit amet</a></li>
-					<li><a href="index.html#">Mea malis nominavi insolens ut</a></li>
-					<li><a href="index.html#">Minim timeam has no aperiri sanctus ei mea per pertinax</a></li>
-					<li><a href="index.html#">Te malorum dignissim eos quod sensibus</a></li>
+					<li><a href="index.html#">&nbsp;</a></li>
+					<li><a href="index.html#">&nbsp;</a></li>
+					<li><a href="index.html#">&nbsp;</a></li>
+					<li><a href="index.html#">&nbsp;</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="span3">
-			<div class="widget">
-				<h5>Latest tweets</h5>
-				<div class="twitter">
-				</div>
-				<script type="text/javascript">
-						$(document).ready(function(){
-						   //TWITTER
-							$(".twitter").tweet({
-								  join_text: "auto",
-								  username: "wrapbootstrap",
-								  avatar_size: 20,
-								  count: 2,
-								  auto_join_text_default: "we said,",
-								  auto_join_text_ed: "we",
-								  auto_join_text_ing: "we were",
-								  auto_join_text_reply: "we replied",
-								  auto_join_text_url: "we were checking out",
-								  loading_text: "loading tweets..."
-							});
-						});
-					</script>
-			</div>
-		</div>
+        <div class="span3">
+            <div class="widget">
+                <h5>关注我们</h5>
+                <ul class="regular">
+                    <li><img src="assets/img/icons/weixin_icon.png" style="max-width: 18px" class="wechatQRcodeTop"/><a href="index.html#">&nbsp;微信</a></li>
+                    <li><img src="assets/img/icons/sina_icon.png" style="max-width: 18px"/><a href="http://weibo.com/3211504190/">&nbsp;微博</a></li>
+                </ul>
+            </div>
+        </div>
 		<div class="span3">
 			<div class="widget">
 				<!-- logo -->
 				<a class="brand logo" href="index.html">
-				<img src="assets/img/logo-dark.png" alt="" />
+				<img src="assets/img/mbslogo.png"  alt="" style="max-width: 60%"/>
 				</a>
 				<!-- end logo -->
-				<address>
-				<strong>Registered Companyname, Inc.</strong><br>
-				 8895 Somename Ave, Suite 600<br>
-				 San Francisco, CA 94107<br>
-				<abbr title="Phone">P:</abbr> (123) 456-7890 </address>
+				<address style="color:#fff;">
+				<strong>上海魔石信息科技有限公司</strong><br>
+				电话:021-54182698 </address>
 			</div>
 		</div>
 	</div>
@@ -449,3 +395,10 @@
 </footer>
 </body>
 </html>
+
+<script>
+    $(function() {
+        $(".wechatQRcodeTop").popover({trigger:'hover',html:true,placement:'top',content:'<img src="assets/img/qrcode.jpg" style="max-width: 100px"/>'});
+        $(".wechatQRcodeBottom").popover({trigger:'hover',html:true,placement:'bottom',content:'<img src="assets/img/qrcode.jpg" style="max-width: 100px"/>'});
+    });
+</script>

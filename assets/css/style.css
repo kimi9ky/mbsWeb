@@ -61,20 +61,40 @@ img.left {
   letter-spacing: -2px;
 }
 
-.features i.left {
+.features img {
 	margin-right:10px;
+    max-width: 12%;
 }
 
 
 .features h4 {
 	margin-top:2px;
+    display: inline;
 }
 
 /* logo */
 header .navbar .brand.logo {
   padding: 0;
   margin-left:0;
-  margin-top:20px;
+  /*margin-top:20px;*/
+}
+/* headtool */
+
+header .headtoolbar {
+    background:#3a3a3a;
+    color:#FFFFFF;
+    font-weight: bolder;
+    padding:10px;
+    margin-bottom: 20px;
+    height: 23px;
+}
+
+header h1, header h2, header h3, header h4, header h5, header h6 {
+    color:#e8e8e8;
+}
+
+header .block-a {
+    background:#bcab37;
 }
 
 
@@ -111,9 +131,9 @@ header .navbar .brand.logo {
 
 .navbar .nav > li > a {
   float: none;
-  font-size:12px;
+  font-size:16px;
   padding: 30px 15px 30px;
-  color: #777777;
+  color: #333;
   text-decoration: none;
   text-shadow: none;
   font-weight:bold;
@@ -259,6 +279,12 @@ section#subintro {
 
 .tagline h2 {
 	text-transform: uppercase;
+    display: inline;
+}
+
+.tagline_text img {
+   max-height: 5%;
+   margin-bottom: 10px;
 }
 
 
@@ -299,7 +325,7 @@ section#subintro {
 		}
 	
 .home-posts  .entry-body {
-		margin: 15px 0 0 68px;
+		margin: 15px 0 0 0px;
 	}
 .entry-body a:hover {
 	text-decoration:none;
@@ -1322,7 +1348,7 @@ blockquote p {
 
 footer {
 	padding-top:30px;
-	color:#7e7e7e;
+	color:#ffffff;
 }
 
 footer.footer {
@@ -1344,7 +1370,7 @@ footer .verybottom {
 
 footer ul.regular li a, footer .nav-list li.nav-header {
 	text-shadow:none;
-	color:#b8b8b8;
+	color:#ffffff;
 }
 
 footer ul.regular,footer ul.nav {

@@ -21,11 +21,35 @@ a:hover {
 footer .nav-list li a:hover,footer ul.regular li a:hover  {
 	color:#81ab35;
 }
-
-.btn-link:hover {
-  color: #81ab35;
+.btn-longSize {
+    color: #ffffff;
+    width: 90px;
+    height: 24px;
+    font-weight: bolder;
 }
-
+.btn-link:hover {
+   color: #81ab35;
+}
+.btn-login {
+    background: #FF9C01;
+    border: 0px solid ;
+}
+.btn-login:hover,
+.btn-login.active,
+.btn-login.disabled,
+.btn-login[disabled] {
+    background: #81ab35;
+}
+.btn-apply {
+    background: #6B8E0C;
+    border: 0px solid ;
+}
+.btn-apply:hover,
+.btn-apply.active,
+.btn-apply.disabled,
+.btn-apply[disabled] {
+    background: #81ab35;
+}
 .btn-color {
   background: #94c045;
 	border: 1px solid #94c045;

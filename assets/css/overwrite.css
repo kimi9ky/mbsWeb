@@ -673,7 +673,7 @@ button.close {
   vertical-align: middle;
   cursor: pointer;
   color: #333333;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  /*text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);*/
   background-color: #f5f5f5;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -751,13 +751,16 @@ button.close {
 }
 
 .btn-large {
-  padding: 11px 19px;
+  padding: 6px 19px;
   font-size: 17.5px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-
+.btn-large img{
+    max-width: 17%;
+    margin-top: -2px;
+}
 .btn-large [class^="icon-"],
 .btn-large [class*=" icon-"] {
   margin-top: 4px;
